@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{63B0C34A-F561-4E83-8A2B-CEC809997172}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Grifindo_Toys_System</RootNamespace>
+    <AssemblyName>Grifindo Toys System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Ad_dashbord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Ad_dashbord.Designer.cs">
+      <DependentUpon>Ad_dashbord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Ad_emp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Ad_emp.Designer.cs">
+      <DependentUpon>Ad_emp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Ad_logins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Ad_logins.Designer.cs">
+      <DependentUpon>Ad_logins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Ad_salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Ad_salary.Designer.cs">
+      <DependentUpon>Ad_salary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Ad_setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Ad_setting.Designer.cs">
+      <DependentUpon>Ad_setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Ad_toy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Ad_toy.Designer.cs">
+      <DependentUpon>Ad_toy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Ma_acc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Ma_acc.Designer.cs">
+      <DependentUpon>Ma_acc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Ma_dashbord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Ma_dashbord.Designer.cs">
+      <DependentUpon>Ma_dashbord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Ma_emp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Ma_emp.Designer.cs">
+      <DependentUpon>Ma_emp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Ma_salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Ma_salary.Designer.cs">
+      <DependentUpon>Ma_salary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Ma_toy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Ma_toy.Designer.cs">
+      <DependentUpon>Ma_toy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="start_window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="start_window.Designer.cs">
+      <DependentUpon>start_window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin\Ad_dashbord.resx">
+      <DependentUpon>Ad_dashbord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Ad_emp.resx">
+      <DependentUpon>Ad_emp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Ad_logins.resx">
+      <DependentUpon>Ad_logins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Ad_salary.resx">
+      <DependentUpon>Ad_salary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Ad_setting.resx">
+      <DependentUpon>Ad_setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Ad_toy.resx">
+      <DependentUpon>Ad_toy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Ma_acc.resx">
+      <DependentUpon>Ma_acc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Ma_dashbord.resx">
+      <DependentUpon>Ma_dashbord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Ma_emp.resx">
+      <DependentUpon>Ma_emp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Ma_salary.resx">
+      <DependentUpon>Ma_salary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Ma_toy.resx">
+      <DependentUpon>Ma_toy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="start_window.resx">
+      <DependentUpon>start_window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Simple Illustrated Toys Logo-modified-modified.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.png" />
+    <None Include="Resources\minimize-sign.png" />
+    <Content Include="Resources\Simple-Illustrated-Toys-Logo-modified-modified.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
